@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MadLibs.Models;
 
 namespace MadLibs.Controllers
 {
@@ -11,7 +12,7 @@ namespace MadLibs.Controllers
       public ActionResult Game(string exlamation, string adverb, string noun, string adjective )
       {
         GameVariable newGame = new GameVariable ();
-        newGame.SetExlamation(exclamation);
+        newGame.SetExlamation(exlamation);
         newGame.SetAdverb(adverb);
         newGame.SetNoun(noun);
         newGame.SetAdjective(adjective);
